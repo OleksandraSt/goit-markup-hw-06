@@ -527,7 +527,8 @@ padding-bottom: 27px;
     color: var(--accent-color);
 }
 
-.social-title {
+.social-title,
+.subscr-form {
     color: var(--primary-text-darkbackground-color);
     font-weight: 700;
     font-size: 14px;
@@ -559,6 +560,62 @@ transition: background-color 250ms var(--timing-function);
 .footer .social-link:hover,
 .footer .social-link:focus {
     background-color: var(--accent-color);
+}
+
+.footer-form{
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.subscribe-form{
+display: flex;
+}
+
+.subscribe-input{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    padding-right: 0;
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--darkbackground-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-darkbackground-color);
+    margin-right: 12px;
+}
+
+.subscr-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-darkbackground-color);
+    background-color: var(--accent-color);
+    width: 200px;
+    border-radius: 4px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    transition: background-color 250ms var(--timing-function);
+
+}
+
+.subscr-btn:hover,
+.subscr-btn:focus {
+    background-color: var(--hero-button-hover-accent-color);
+    cursor: pointer;
+}
+
+.send-icon{
+    fill: currentColor;
 }
 
 /* Modal */
