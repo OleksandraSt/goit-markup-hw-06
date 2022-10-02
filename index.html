@@ -515,6 +515,62 @@
                     </use>
                 </svg>
             </div>
+            <div class="modal-form">
+                <p class="form-instruction">Залиште свої дані, ми вам передзвонимо</p>
+                <form name="register-form" autocomplete="on" novalidate class="register-form">
+                    <div class="field">
+                        <label class="form-label">
+                            Ім'я
+                                <input type="text" name="name" class="form-field">
+                                <svg class="form-icon" width="18px" height="18px">
+                                    <use href="./images/icons.svg#icon-person">
+        
+                                    </use>
+                                </svg>
+                        </label>
+                    </div>
+                    <div class="field">
+                        <label class="form-label">
+                            Телефон
+                            <input type="tel" name="tel" class="form-field">
+                            <svg class="form-icon" width="18px" height="18px">
+                                <use href="./images/icons.svg#icon-phone">
+    
+                                </use>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="field">
+                        <label class="form-label">
+                            Пошта
+                            <input type="email" name="email" class="form-field">
+                            <svg class="form-icon" width="18px" height="18px">
+                                <use href="./images/icons.svg#icon-email">
+    
+                                </use>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="field comment">
+                        <label class="form-label">
+                            Коментар
+                            <textarea name="comment" rows="10" placeholder="Введіть текст" class="form-field comment"></textarea>
+                        </label>
+                    </div>
+                    <div class="field checkmark">
+                        <input type="checkbox" name="policy" id="policy" class="visually-hidden checkbox">
+                        <label for="policy" class="checkbox-label">
+                            <span>
+                                Погоджуюся з розсилкою та приймаю 
+                            <a href="#" class="link-terms">Умови договору</a>
+                            </span>
+                        </label>
+                    </div>
+                    <button type="submit" class="form-button">
+                        Відправити
+                    </button>
+                </form>
+            </div>
         </div>
     </div>
 
