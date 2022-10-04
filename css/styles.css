@@ -375,7 +375,6 @@ padding-bottom: 27px;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
-    margin-bottom: 16px;
 }
 
 .team-member {
@@ -570,7 +569,7 @@ transition: background-color 250ms var(--timing-function);
 display: flex;
 }
 
-.subscribe-input{
+.subscribe-input {
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
@@ -586,6 +585,13 @@ display: flex;
     letter-spacing: 0.03em;
     color: var(--secondary-text-darkbackground-color);
     margin-right: 12px;
+
+    transition: border-color 250ms var(--timing-function);
+}
+
+.subscribe-input:hover,
+.subscribe-input:focus {
+    border-color: var(--primary-text-darkbackground-color);
 }
 
 .subscr-btn {
@@ -633,6 +639,7 @@ display: flex;
 
 .backdrop.is-hidden .modal{
     transform: translate(-50%, -50%) scale(0.7);
+
 }
 
 .backdrop.is-hidden{
@@ -654,7 +661,7 @@ display: flex;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     padding: 40px;
 
-    transition: transform 250ms var(--timing-function);
+    transition: transform 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
 
 .modal-action{
@@ -720,7 +727,7 @@ display: flex;
     color: #000000;
     margin-top: 4px;
 
-    transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
+    transition: border-color 250ms var(--timing-function);
     }
 
 .form-field:hover,
@@ -729,6 +736,7 @@ display: flex;
 .form-field:focus ~ .form-icon {
     fill: var(--accent-color);
     border-color: var(--accent-color);
+    outline: var(--accent-color);
 } 
 
     .form-icon {
@@ -736,6 +744,8 @@ display: flex;
         left: 12px;
         bottom: 11px;
         fill: var(--secondary-text-color);
+
+        transition: fill 250ms var(--timing-function);
     }
     
 .field.comment {
